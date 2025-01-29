@@ -5,7 +5,7 @@ import resumefile from '../../assest/Samrath_kumar_resume.pdf'
 import './About.css'
 
 const About = () => {
-  const { name, role, description, resume, social } = about
+  const { name, role, description, social } = about
 
   return (
     <div className='about center'>
