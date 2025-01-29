@@ -1,6 +1,7 @@
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import { about } from '../../portfolio'
+import resumefile from '../../assest/Samrath_kumar_resume.pdf'
 import './About.css'
 
 const About = () => {
@@ -18,13 +19,11 @@ const About = () => {
       <p className='about__desc'>{description && description}</p>
 
       <div className='about__contact center'>
-        {resume && (
-          <a href={resume}>
-            <span type='button' className='btn btn--outline'>
-              Resume
-            </span>
-          </a>
-        )}
+        <a href={resumefile} download='Samrath_kumar_resume.pdf'>
+          <span type='button' className='btn btn--outline'>
+            Resume
+          </span>
+        </a>
 
         {social && (
           <>
