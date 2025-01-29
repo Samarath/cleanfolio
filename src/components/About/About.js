@@ -6,6 +6,7 @@ import './About.css'
 
 const About = () => {
   const { name, role, description, social } = about
+  // main
 
   return (
     <div className='about center'>
